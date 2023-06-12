@@ -1,0 +1,17 @@
+:root {
+   --clr-yellow-1: #ffd02b;
+   --clr-yellow-2: #ffc300;
+   --clr-gray-1: #646e77;
+   --clr-blue-1: #33475b;
+   --clr-white-1: #f5f8fa;
+   --main-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
