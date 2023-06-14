@@ -2,26 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-		<!--<link rel="icon" type="image/svg+xml" href="/vite.svg" />-->
+		<link rel="shortcut icon" type="image/x-icon" href="public/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="public/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>rastree :: website</title>
 		<link rel="stylesheet"
     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Days+One&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="style.css">
   </head>
   <body>
+		<address class="hr-addr"><span class="bx bx-phone"></span><span>llamar ahora:</span><a href="tel:+573144339861">+57-3144339861</a></address>
 		<header>
+			<div class="bx bx-menu" id="menu-icon"></div>
 			<a href="#" class="logo">
-				<img src="" alt="logo rastree">
-				<div></div>
-				<ul class="navlist">
+				<picture>
+					<source srcset="public/logo_1803x500.avif" type="image/avif">
+					<source srcset="public/logo_1803x500.webp" type="image/webp">
+				  <img src="public/logo_1803x500.png" alt="logo rastree" width="136" height="38" loading="lazy">
+				</picture>
+			</a>
+				<menu class="nav-list">
 					<li><a href="">servicios</a></li>
 					<li><a href="">contactenos</a></li>
 					<li><a href="">nosotros</a></li>
-				</ul>
+				</menu>
 
 				<a href="#" class="btn-app">rastrear</a>
 			</a>
 		</header>
+
   </body>
 </html>
