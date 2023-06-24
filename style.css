@@ -53,14 +53,10 @@ header {
     gap: 0.5rem;
     display: none;
 }
-.logo img {
-    width: 116px;
-    height: auto;
-}
 .btn-app {
     background-color: var(--clr-yellow-1);
     font-weight: 600;
-    padding: 0.3em 1.5em;
+    padding: 0.3em 1.0625em;
     border-radius: 0.2em;
 }
 @media (min-width: 62rem){
@@ -87,4 +83,25 @@ header {
 main {
     width: 100%;
     height: auto;
+}
+ /*
+  * Logo SVG
+  */
+.logo-symbol-svg {
+    width: 3.375rem;
+    height: 3.375rem;
+    fill: red;
+    color: red;
+}
+.logo-path {
+    fill:#ffd02b;
+    fill-opacity:1;
+    stroke-width:1.00002;
+    stroke-dasharray:none;
+}
+.logo-path-shadow {
+ fill:#33475b;
+ fill-opacity:1;
+ stroke-width:1.00002149;
+ stroke-dasharray:none;
 }
