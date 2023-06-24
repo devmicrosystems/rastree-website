@@ -42,6 +42,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    position: sticky;
+    top: 0;
 }
 .menu-icon {
     font-size: 2em;
