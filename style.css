@@ -3,8 +3,14 @@
    --clr-yellow-2: #ffc300;
    --clr-gray-1: #646e77;
    --clr-blue-1: #33475b;
-   --clr-white-1: #f5f8fa;
+   --clr-white-1: #fff;
+   --clr-white-2: #f5f8fa;
    --main-font: 'Poppins', sans-serif; 
+   --secondary-family: 'Nunito', sans-serif;
+   /*
+   font-family: 'Nunito', sans-serif;
+   font-family: 'Poppins', sans-serif;
+   */
 }
 * {
     margin: 0;
@@ -106,4 +112,38 @@ main {
  fill-opacity:1;
  stroke-width:1.00002149;
  stroke-dasharray:none;
+}
+
+/*
+ * section hero
+ */
+.hero {
+    background-color: var(--clr-yellow-1);
+}
+.hero-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero-item {
+    max-width: 90%;
+}
+.hero-item > h1 {
+    font-size: 2.5em;
+    font-weight: 800;
+    line-height: 120%;
+    text-transform: capitalize;
+    padding-top: 30px;
+}
+.hero-item > h1 > span {
+    color: var(--clr-white-1);
+}
+.price-descrip ol li::marker {
+    content: "✓ ";
+    color: var(--clr-white-1);
+}
+.price-descrip ol li {
+    font-weight: 600;
+    text-transform: capitalize;
+    list-style-position: inside;
 }
