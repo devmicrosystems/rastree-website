@@ -67,6 +67,9 @@ header {
     padding: 0.3em 1.0625em;
     border-radius: 0.2em;
 }
+/*
+ * viewport > 992px
+ */
 @media (min-width: 62rem){
     header {
         justify-content: flex-end;
@@ -86,8 +89,7 @@ header {
         order: 3;
     }
 }
-
-/* main */
+/* Main */
 main {
     width: 100%;
     height: auto;
@@ -108,14 +110,13 @@ main {
     stroke-dasharray:none;
 }
 .logo-path-shadow {
- fill:#33475b;
- fill-opacity:1;
- stroke-width:1.00002149;
- stroke-dasharray:none;
+     fill:#33475b;
+     fill-opacity:1;
+     stroke-width:1.00002149;
+     stroke-dasharray:none;
 }
-
 /*
- * section hero
+ * Section Hero
  */
 .hero {
     background-color: var(--clr-yellow-1);
@@ -127,19 +128,25 @@ main {
 }
 .hero-box .hero-item:nth-child(1) {
     max-width: 90%;
+    margin-top: 1rem;
 }
 .hero-box .hero-item:nth-child(n-1) {
     min-width: 90%;
+}
+.hero-box .hero-item:nth-child(n) {
+    margin-bottom: 1.5em;
 }
 .hero-item > h1 {
     font-size: 2.5em;
     font-weight: 800;
     line-height: 120%;
     text-transform: capitalize;
-    padding-top: 30px;
 }
 .hero-item > h1 > span {
     color: var(--clr-white-1);
+}
+.price-descrip {
+    margin-bottom: 1rem;
 }
 .price-descrip ol li::marker {
     content: "✓ ";
@@ -161,6 +168,7 @@ main {
 .purchase-btns [class^="btn-"]:nth-child(1) {
     color: var(--clr-white-1);
     background-color: inherit;
+    margin-bottom: 1rem;
 }
 .purchase-btns [class^="btn-"]:nth-child(2) {
     color: var(--clr-yellow-1);
