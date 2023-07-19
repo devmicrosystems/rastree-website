@@ -174,3 +174,109 @@ main {
     color: var(--clr-yellow-1);
     background-color: var(--clr-white-1);
 }
+/*
+.text-1 {
+font-style:normal;
+font-variant:normal;
+font-stretch:normal;
+font-size:4.93889px;
+font-family:Nunito;
+-inkscape-font-specification:'Nunito, Semi-Bold';
+font-variant-ligatures:normal;
+font-variant-caps:normal;
+font-variant-numeric:normal;
+font-variant-east-asian:normal;
+fill:#33475b;
+fill-opacity:1;
+stroke-width:.264583;
+font-size:4.93889px;
+font-weight:600;
+font-size: 0.308680625rem;
+}
+*/
+/*
+.text-1 > tspan {
+font-style:normal;
+font-variant:normal;
+font-stretch:normal;
+-inkscape-font-specification:'Nunito, Semi-Bold';
+font-variant-ligatures:normal;
+font-variant-caps:normal;
+font-variant-numeric:normal;
+font-variant-east-asian:normal;
+font-weight:600;
+font-size:4.93889px;
+fill:#33475b;
+fill-opacity:1;
+stroke-width:.264583;
+}
+*/
+/*
+.text-2 {
+font-style:normal;
+font-variant:normal;
+font-stretch:normal;
+font-family:Nunito;
+-inkscape-font-specification:'Nunito, Heavy';
+font-variant-ligatures:normal;
+font-variant-caps:normal;
+font-variant-numeric:normal;
+font-variant-east-asian:normal;
+stroke-width:.264583;
+fill:#33475b;
+fill-opacity:1;
+font-size:1.5875rem;
+font-weight:900;
+}
+*/
+/*
+.text-3 {
+font-style:normal;
+font-variant:normal;
+font-stretch:normal;
+-inkscape-font-specification:'Nunito, Semi-Bold';
+font-variant-ligatures:normal;
+font-variant-caps:normal;
+font-variant-numeric:normal;
+font-variant-east-asian:normal;
+stroke-width:.264583
+fill:#33475b;
+fill-opacity:1;
+font-size:0.308680625rem;
+font-weight:600;
+}
+*/
+/*
+.text-4 {
+font-style:normal;
+font-variant:normal;
+font-stretch:normal;
+font-size:16.9333px;
+font-variant-ligatures:normal;
+font-variant-numeric: normal;
+font-variant-east-asian:normal;
+stroke-width:.264583;
+fill:#33475b;
+fill-opacity:1;
+font-variant-caps: unicase;
+font-weight: 600;
+font-size: 1.05833125rem;
+}
+*/
+[class^="text-"]:nth-child(2n+1) {
+    font-weight:600;
+    font-size: 0.308680625rem;
+}
+[class^="text-"]:nth-child(2) {
+    font-size:1.5875rem;
+    font-weight:900;
+}
+[class^="text-"]:nth-last-child(1) {
+    font-variant-caps: unicase;
+    font-weight: 600;
+    font-size: 1.05833125rem;
+}
+[class^="text-"] > tspan {
+    fill: var(--clr-white-1);
+    font-family: var(--secondary-family);
+}
