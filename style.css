@@ -1,3 +1,9 @@
+
+
+
+/*
+ * web page styles
+ */
 :root {
    --clr-yellow-1: #ffd02b;
    --clr-yellow-2: #ffc300;
@@ -22,6 +28,21 @@ body {
     width: 100%;
     height: 100vh;
 }
+/*
+ * Tag's
+ */
+h2 {
+    font-weight: 700;
+    font-size: 1.5em;
+    padding: 1em 0;
+}
+h4 {
+    font-weight: 600;
+    font-size: 1em;
+}
+/*
+ * Address
+ */
 .hr-addr {
     font-style: normal;
     font-size: .5rem;
@@ -295,9 +316,6 @@ font-size: 1.05833125rem;
     background-color: var(--clr-white-1);
 }
 .main-title > h2 {
-    font-weight: 600;
-    font-size: 1.5em; 
-    padding: 1em 0;
     text-align: center;
 }
 .main-title > h2::first-letter {
@@ -322,3 +340,19 @@ font-size: 1.05833125rem;
 /*
  * section contact
  */
+.contact {
+    background-color: var(--clr-yellow-1);
+}
+.contact section:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact h2 {
+    font-size: 2.25em;
+    color: var(--clr-white-1);
+    text-transform: capitalize;
+}
+.contact section:first-child :nth-child(1n+2) {
+    display: none;
+}
