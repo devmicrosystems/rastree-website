@@ -1,7 +1,5 @@
-# rastree :: web site
-
-## update
-2023.06.12
+# Web page :: rastree
+web page rastree
 
 ## License
-All rights are property of Jorge A. Toro
+All rights are property of Dev Microsystems S.A.S

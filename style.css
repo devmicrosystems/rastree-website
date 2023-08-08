@@ -100,6 +100,7 @@ meter {
 }
 
 
+
 /*
  * web page styles
  */
@@ -441,12 +442,17 @@ font-size: 1.05833125rem;
  */
 .contact {
     background-color: var(--clr-yellow-1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+/*
 .contact section:nth-child(1) {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+*/
 .contact h2 {
     font-size: 2.25em;
     color: var(--clr-white-1);
@@ -454,4 +460,25 @@ font-size: 1.05833125rem;
 }
 .contact section:first-child :nth-child(1n+2) {
     display: none;
+}
+
+.contact section:nth-child(2) {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5em;
+}
+
+div:has(.btn-send) {
+   width: 100%;
+}
+.btn-send {
+    color: var(--clr-white-1);
+    font: 700 1.5em var(--secondary-family);
+    text-transform: capitalize;
+    text-align: center;
+    border-radius: 3px;
+    border: 3px solid var(--clr-white-1);
+    display: block;
 }
