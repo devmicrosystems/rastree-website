@@ -525,6 +525,7 @@ footer {
     gap: 2rem;
     justify-content: center;
     padding: 2rem 0;
+    text-transform: capitalize;
 }
 .f-1 {
     order: 3;
@@ -532,9 +533,6 @@ footer {
 }
 [class^="f-"]:nth-child(1n+2) {
     flex-grow: 1;
-}
-footer h4 {
-    text-transform: capitalize;
 }
 footer > [class^="f-"] {
     text-align: center;
