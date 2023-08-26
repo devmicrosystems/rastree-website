@@ -461,7 +461,6 @@ font-size: 1.05833125rem;
 .contact section:first-child :nth-child(1n+2) {
     display: none;
 }
-
 .contact section:nth-child(2) {
     width: 90%;
     display: flex;
@@ -469,11 +468,12 @@ font-size: 1.05833125rem;
     align-items: center;
     margin-bottom: 1.5em;
 }
-
-div:has(.btn-send) {
-   width: 100%;
+div:has(.btn-send),
+.formulary {
+   min-width: 100%;
+   margin-bottom: 1.5em;
 }
-.btn-send {
+a.btn-send {
     color: var(--clr-white-1);
     font: 700 1.5em var(--secondary-family);
     text-transform: capitalize;
@@ -482,6 +482,17 @@ div:has(.btn-send) {
     border: 3px solid var(--clr-white-1);
     display: block;
 }
+.contact label {
+    text-transform: capitalize;
+}
+input[type="text"],
+textarea {
+    border: 1.5px solid var(--clr-white-1);
+    border-radius: 3px;
+    width: 100%;
+    padding: 5px;
+}
+
 /*
  * section about
  */
