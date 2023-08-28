@@ -277,20 +277,16 @@ main {
     text-transform: capitalize;
     list-style-position: inside;
 }
-.purchase-btns a {
+.purchase-btns [class^="btn-"]:nth-child(1) {
+    margin-bottom: 1rem;
+}
+.purchase-btns [class^="btn-"]:nth-child(2) {
     font: 700 1.5em var(--secondary-family);
     display: block;
     text-transform: capitalize;
     text-align: center;
     border-radius: 3px;
     border: 3px solid var(--clr-white-1);
-}
-.purchase-btns [class^="btn-"]:nth-child(1) {
-    color: var(--clr-white-1);
-    background-color: inherit;
-    margin-bottom: 1rem;
-}
-.purchase-btns [class^="btn-"]:nth-child(2) {
     color: var(--clr-yellow-1);
     background-color: var(--clr-white-1);
 }
@@ -468,12 +464,12 @@ font-size: 1.05833125rem;
     align-items: center;
     margin-bottom: 1.5em;
 }
-div:has(.btn-send),
+div:has(.btn-white),
 .formulary {
    min-width: 100%;
    margin-bottom: 1.5em;
 }
-a.btn-send {
+a.btn-white {
     color: var(--clr-white-1);
     font: 700 1.5em var(--secondary-family);
     text-transform: capitalize;
@@ -481,6 +477,10 @@ a.btn-send {
     border-radius: 3px;
     border: 3px solid var(--clr-white-1);
     display: block;
+}
+a.btn-white:hover {
+    background-color: var(--clr-white-1);
+    color: var(--clr-yellow-1);
 }
 .contact label {
     text-transform: capitalize;
@@ -491,6 +491,8 @@ textarea {
     border-radius: 3px;
     width: 100%;
     padding: 5px;
+    background-color: var(--clr-white-1);
+    border: 1px solid var(--clr-gray-1);
 }
 
 /*
