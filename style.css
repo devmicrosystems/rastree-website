@@ -109,6 +109,7 @@ meter {
    --clr-yellow-2: #ffc300;
    --clr-gray-1: #646e77;
    --clr-blue-1: #33475b;
+   --clr-blue-1-shadow: rgba(51, 71, 91, 0.25);
    --clr-white-1: #fff;
    --clr-white-2: #f5f8fa;
    --main-font: 'Poppins', sans-serif; 
@@ -127,6 +128,7 @@ html,
 body {
     width: 100%;
     height: 100vh;
+    user-select: none;
 }
 /*
  * Tag's
@@ -172,7 +174,7 @@ header {
 .sticky {
     position: fixed;
     top: 0;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 10px var(--clr-blue-1-shadow);
 }
 .menu-icon {
     font-size: 2em;
@@ -189,6 +191,9 @@ header {
     font-weight: 600;
     padding: 0.3em 1.0625em;
     border-radius: 0.2em;
+}
+.btn-app:hover {
+    box-shadow: 2px 2px 2px var(--clr-blue-1-shadow);
 }
 /*
  * viewport > 992px
@@ -495,7 +500,8 @@ textarea {
     width: 100%;
     padding: 5px;
     background-color: var(--clr-white-1);
-    border: 1px solid var(--clr-gray-1);
+    border: 1px solid var(--clr-blue-1-shadow);
+    color: var(--clr-blue-1);
 }
 
 /*
@@ -530,7 +536,6 @@ footer {
     gap: 2rem;
     justify-content: center;
     padding: 2rem 0;
-    text-transform: capitalize;
 }
 .f-1 {
     order: 3;
@@ -538,7 +543,11 @@ footer {
 }
 [class^="f-"]:nth-child(1n+2) {
     flex-grow: 1;
+    text-transform: capitalize;
 }
 footer > [class^="f-"] {
     text-align: center;
+}
+footer > [class^="f-"] li a:hover {
+    opacity: 0.5;
 }
