@@ -309,6 +309,9 @@ main {
 .price-descrip {
     margin-bottom: 1rem;
 }
+.price-descrip li > span {
+    text-transform: uppercase;
+}
 .price-descrip ol li::marker {
     content: "✓ ";
     color: var(--clr-white-1);
