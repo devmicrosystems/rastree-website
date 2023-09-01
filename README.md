@@ -1,5 +1,13 @@
 # Web page :: rastree
-web page rastree
+Web page [rastree](rastree.com)
 
-## License
-All rights are property of Dev Microsystems S.A.S
+# Dependence
+ - node
+ - vite
+
+## running in dev
+
+´´´
+npm install
+npm run dev -- --host
+´´´
