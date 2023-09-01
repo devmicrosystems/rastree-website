@@ -333,6 +333,7 @@ main {
     border: 3px solid var(--clr-white-1);
     color: var(--clr-yellow-1);
     background-color: var(--clr-white-1);
+    padding: 0.3em 0;
 }
 /*
 .text-1 {
@@ -521,10 +522,16 @@ a.btn-white {
     border-radius: 3px;
     border: 3px solid var(--clr-white-1);
     display: block;
+    padding: 0.3em 0;
 }
 a.btn-white:hover {
     background-color: var(--clr-white-1);
     color: var(--clr-yellow-1);
+}
+a > span.bxl-whatsapp {
+    color: inherit;
+    font-size: 1.5em;
+    vertical-align: middle;
 }
 .contact label {
     text-transform: capitalize;
@@ -539,7 +546,6 @@ textarea {
     border: 1px solid var(--clr-blue-1-shadow);
     color: var(--clr-blue-1);
 }
-
 /*
  * section about
  */
