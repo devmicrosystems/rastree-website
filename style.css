@@ -615,8 +615,8 @@ footer > [class^="f-"] li a:hover {
  * viewport > 992px
  */
 @media (min-width: 62rem){
-    header {
-        justify-content: flex-end;
+    header > nav {
+        gap: 0.5em;
     }
     .nav-list {
         display: flex;
