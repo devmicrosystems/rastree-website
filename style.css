@@ -472,9 +472,11 @@ font-size: 1.05833125rem;
  */
 .contact {
     background-color: var(--clr-yellow-1);
+    /*
     display: flex;
     flex-direction: column;
     align-items: center;
+    */
 }
 /*
 .contact section:nth-child(1) {
@@ -724,6 +726,24 @@ footer > [class^="f-"] li a:hover {
         flex-direction: row;
         justify-content: center;
     }
+    .contact section:first-child :nth-child(1n+2) {
+        display: inline-block;
+    }
+    .contact section:first-child > p {
+        margin-bottom: 1.5em;
+    }
+    .contact section:first-child > p span {
+        color: var(--clr-white-1);
+        font-weight: 500;
+    }
+    .contact section:nth-child(2) {
+        background-color: var(--clr-white-1);
+        width: auto;
+        padding: 4em 5em;
+        box-shadow: 0px 1px 5px var(--clr-blue-1-shadow);
+        margin: 2em 0;
+    }
+
     /*
     [class^="card-"] {
         width: 25%;
