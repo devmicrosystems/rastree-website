@@ -568,6 +568,8 @@ textarea {
  */
 footer {
     background-color: var(--clr-white-2);
+}
+.fbox {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
@@ -582,10 +584,10 @@ footer {
     flex-grow: 1;
     text-transform: capitalize;
 }
-footer > [class^="f-"] {
+.fbox > [class^="f-"] {
     text-align: center;
 }
-footer > [class^="f-"] li a:hover {
+.fbox > [class^="f-"] li a:hover {
     opacity: 0.5;
 }
 
@@ -754,4 +756,14 @@ footer > [class^="f-"] li a:hover {
     .about h2 {
         font-size: 2em;
     }
+    /* 
+     * footer
+     */
+     .fbox {
+         width: 1200px;
+         margin: 0 auto;
+     }
+     .f-1 { 
+         order: 0;
+     }
 }
